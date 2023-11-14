@@ -8,8 +8,8 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://www.dnd5eapi.co/api/monsters/goblin", requestOptions)
+fetch("https://www.dnd5eapi.co/api/classes/bard", requestOptions)
   .then(response => response.text())
-  .then(result => console.log(JSON.parse(result).armor_class[0].value))
+  .then(result => console.log(JSON.parse(result)))
   .catch(error => console.log('error', error));
 
