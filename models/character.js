@@ -20,6 +20,14 @@ const Character = sequelize.define('Character', {
     type: DataTypes.STRING,
     allowNull: false
   },
+  armorClass: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
+  hitPoints: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
   abilityScores: {
     type: DataTypes.JSON,
     allowNull: false,
