@@ -12,4 +12,3 @@ fetch("https://www.dnd5eapi.co/api/classes/bard", requestOptions)
   .then(response => response.text())
   .then(result => console.log(JSON.parse(result)))
   .catch(error => console.log('error', error));
-
