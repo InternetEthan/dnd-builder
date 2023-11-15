@@ -1,2 +1,4 @@
-DROP DATABASE IF EXISTS builder_db
-CREATE DATABASE builder_db
+DROP DATABASE IF EXISTS builder_db;
+CREATE DATABASE builder_db;
+USE builder_db;
+SELECT DATABASE();
