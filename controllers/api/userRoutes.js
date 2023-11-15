@@ -1,5 +1,4 @@
 // create, login and logout user
-
 const router = require('express').Router();
 const { User } = require('../../models');
 
@@ -23,6 +22,7 @@ router.post('/login', async (req, res) => {
             res.status(400).json({ message: 'Incorrect email or password, please try again' });
             return;
         }
+        
         const validPassword = await userData.checkPassword(req.body.password);
         if (!validPassword) {
             res.status(400).json({ message: 'Incorrect email or password, please try again' });
