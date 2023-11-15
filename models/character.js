@@ -1,8 +1,10 @@
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
 
-const { DataTypes } = require('sequelize');
-const sequelize = require('../database');
+class Character extends Model {}
 
-const Character = sequelize.define('Character', {
+Character.init(
+{
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -39,7 +41,15 @@ const Character = sequelize.define('Character', {
       wisdom: 0,
       charisma: 0
     }
-  }
+  },
+  
+},
+{
+  sequelize,
+  freezeTableName: true,
+  underscored: true,
+  modelName: 'Character'
 });
 
 module.exports = Character;
+

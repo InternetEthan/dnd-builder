@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(255, 47, 47);
+}
+
 header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
@@ -17,8 +21,15 @@ header, .project:not(:last-child) {
   text-decoration: underline;
 }
 
+/* Is this even used... */
 .dollar-amount {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;
 }
+
+#madeBy {
+  font-size: 20px;
+  text-align: center;
+}
+
