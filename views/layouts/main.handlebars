@@ -23,10 +23,10 @@
       </h1>
       <nav>
                 {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a href="/profile">Profile</a>
+        <a href="/" class="no-button" id="logout">Logout</a>
+        <a href="/createCharacter">Create a Character</a>
         {{else}}
-        <a href="/login">login</a>
         {{/if}}
       </nav>
     </header>
