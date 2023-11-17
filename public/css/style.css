@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: rgb(255, 47, 47);
 }
 
@@ -22,7 +22,7 @@ header, .project:not(:last-child) {
 }
 
 /* Is this even used... */
-.dollar-amount {
+/* .dollar-amount {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;
@@ -31,5 +31,12 @@ header, .project:not(:last-child) {
 #madeBy {
   font-size: 20px;
   text-align: center;
+} */
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.my-button {
+  background-color: rgb(88, 52, 35);
+}
