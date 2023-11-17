@@ -36,4 +36,9 @@ router.get('/profile', withAuth, async (req, res) => {
     }
   });
 
+  
+  // display a specific character
+  router.get('characters/:id', async (req, res) => {
+  });
+
 module.exports = router;
