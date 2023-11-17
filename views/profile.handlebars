@@ -6,7 +6,17 @@
 
 <div class="">
   <div class="">
-    <h3>Placeholder</h3>
+    <h3>Select a character</h3>
+    {{!-- Add code to display character information --}}
+    <ul>
+      {{#each characters}}
+        <ul><a href="/characters/{{this.id}}">{{this.name}}</a></ul>
+        <li>{{this.race}}</li>
+        <li>{{this.class}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
 
 {{!-- We need to rework this code to fit our project. --}}
 
