@@ -1,8 +1,8 @@
 // const rng = require('rng')
 
 const characterFormHandler = async (event) => {
-    event.preventDefault();
-  
+  event.preventDefault();
+
     // Collect values from the character form
     const charName = document.querySelector('#character-name').value.trim();
     const charRace = document.querySelector('#character-race').value.trim();
@@ -20,7 +20,7 @@ const characterFormHandler = async (event) => {
         headers: { 'Content-Type': 'application/json' },
       });
   
-      if (response.ok) {
+  if (response.ok) {
         // If successful, redirect the browser to the profile page
         // document.location.replace('/profile');
         console.log("success")
@@ -46,6 +46,6 @@ const characterFormHandler = async (event) => {
 // };
   
 document
-    .querySelector('.character-form')
-    .addEventListener('submit', characterFormHandler);
+  .querySelector('.character-form')
+  .addEventListener('submit', characterFormHandler);
     
