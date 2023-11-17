@@ -2,43 +2,31 @@
     {
         "name": "Aria",
         "race": "Human",
-        "class": "Wizard",
-        "level": 1,
-        "user_id": 1
+        "class": "Wizard"
     },
     {
         "name": "Erevan",
         "race": "Elf",
-        "class": "Ranger",
-        "level": 1,
-        "user_id": 2
+        "class": "Ranger"
     },
     {
         "name": "Gronar",
         "race": "Dwarf",
-        "class": "Fighter",
-        "level": 1,
-        "user_id": 3
+        "class": "Fighter"
     },
     {
         "name": "Kethril",
         "race": "Human",
-        "class": "Ranger",
-        "level": 1,
-        "user_id": 4
+        "class": "Ranger"
     },
     {
         "name": "Lirien",
         "race": "Halfling",
-        "class": "Rogue",
-        "level": 1,
-        "user_id": 5
+        "class": "Rogue"
     },
     {
         "name": "Thrain",
         "race": "Dwarf",
-        "class": "Fighter",
-        "level": 1,
-        "user_id": 6
+        "class": "Fighter"
     }
 ]
