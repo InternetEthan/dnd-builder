@@ -8,7 +8,10 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://www.dnd5eapi.co/api/classes/bard", requestOptions)
+const bard = fetch("https://www.dnd5eapi.co/api/classes/bard", requestOptions)
   .then(response => response.text())
-  .then(result => console.log(JSON.parse(result)))
+  .then(result => {const bard = JSON.parse(result); console.log(bard); return bard})
   .catch(error => console.log('error', error));
+
+console.log(bard.name);
+
