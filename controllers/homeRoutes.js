@@ -12,6 +12,11 @@ router.get('/', (req, res) => {
     res.render('login');
   });
 
+router.get('/createCharacter', (req, res) => {
+    res.render('createCharacter');
+});
+
+
 router.get('/profile', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
@@ -29,6 +34,11 @@ router.get('/profile', withAuth, async (req, res) => {
     } catch (err) {
       res.status(500).json(err);
     }
+  });
+
+  
+  // display a specific character
+  router.get('characters/:id', async (req, res) => {
   });
 
 module.exports = router;
