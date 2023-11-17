@@ -12,6 +12,11 @@ router.get('/', (req, res) => {
     res.render('login');
   });
 
+router.get('/createCharacter', (req, res) => {
+    res.render('createCharacter');
+});
+
+
 router.get('/profile', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
