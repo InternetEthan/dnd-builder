@@ -13,30 +13,13 @@
         <ul><a href="/characters/{{this.id}}">{{this.name}}</a></ul>
         <li>{{this.race}}</li>
         <li>{{this.class}}</li>
+      <form class="form delete-character">
+        <div class="form-group">
+            <button class="btn btn-primary" data-id="{{this.id}}">Delete Character</button>
+        </div>
+      </form>
       {{/each}}
     </ul>
-  </div>
-</div>
-
-{{!-- We need to rework this code to fit our project. --}}
-
-    {{!-- <form class="form new-project-form">
-      <div class="form-group">
-        <label for="project-name">project name:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
-      </div>
-      <div class="form-group">
-        <label for="project-funding">needed funding ($):</label>
-        <input class="form-input" type="number" id="project-funding" name="project-funding" />
-      </div>
-      <div class="form-group">
-        <label for="project-desc">description:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </form> --}}
   </div>
 </div>
 
