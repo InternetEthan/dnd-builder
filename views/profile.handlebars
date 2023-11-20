@@ -4,24 +4,22 @@
   </div>
 </div>
 
-<div class="">
-  <div class="">
-    <h3>Select a character</h3>
+{{#if characters.length}}
+<div class="character-list">
+    <h3>Select a character:</h3>
+  <div class="dispCharacterInfo">
     {{!-- Add code to display character information --}}
-    <ul>
       {{#each characters}}
-        <ul><a href="/characters/{{this.id}}">{{this.name}}</a></ul>
-        <li>{{this.race}}</li>
-        <li>{{this.class}}</li>
-      <form class="form delete-character">
-        <div class="form-group">
-            <button class="btn btn-primary" data-id="{{this.id}}">Delete Character</button>
-        </div>
-      </form>
-      {{/each}}
+    <ul>
+      <ul><a href="/characters/{{this.id}}">{{this.name}}</a>, {{this.race}} {{this.class}}</ul>
+      {{!-- <li></li> --}}
     </ul>
+    <div class="del-Btn">
+      <button class="btn btn-sm btn-danger" data-id="{{this.id}}">DELETE</button>
+    </div>
+      {{/each}}
   </div>
+  {{/if}}
 </div>
 
 <script src="./js/profile.js"></script>
-
