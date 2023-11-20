@@ -1,75 +1,24 @@
 <div class="row">
-  <div class="col">
-    <h2>Signup</h2>
 
-    <form class="form signup-form">
+    
+  <div class="col">
+    <h2>Create Character</h2>
+
+    <form class="form character-form">
         {{!-- User chooses character name --}}
         <div class="form-group">
             <label for="character-name">Character Name:</label>
-            <input class="form-input" type="text" id="character-name" />
+            <input class="form-input" type="text" id="character-name" name="name">
         </div>
         {{!-- User chooses character race --}}
         <div class="form-group">
             <label for="character-race">Choose Character Race:</label>
-            <select class="form-control" id="character-race">
-            <option>Dwarf</option>
-            <option>Elf</option>
-            <option>Halfling</option>
-            <option>Human</option>
-            <option>Dragonborn</option>
-            <option>Gnome</option>
-            <option>Half-Elf</option>
-            <option>Half-Orc</option>
-            <option>Tiefling</option>
-            </select>
+            <input class="form-input" type="text" id="character-race" name="race"></input>
         </div>
-        {{!-- User chooses character class --}}
+        {{!-- User chooses chaaracter class --}}
         <div class="form-group">
             <label for="character-class">Choose Character Class:</label>
-            <select class="form-control" id="character-class">
-            <option>Barbarian</option>
-            <option>Bard</option>
-            <option>Cleric</option>
-            <option>Druid</option>
-            <option>Fighter</option>
-            <option>Monk</option>
-            <option>Paladin</option>
-            <option>Ranger</option>
-            <option>Rogue</option>
-            <option>Rogue</option>
-            <option>Sorcerer</option>
-            <option>Warlock</option>
-            <option>Wizard</option>
-            </select>
-        </div>
-        {{!-- User chooses character how ability scores are determined --}}
-        <fieldset class="form-group">
-            <div class="row">
-            <legend class="col-form-label col-sm-2 pt-0">Choose Ability Scores:</legend>
-                <div class="col-sm-10">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="abilityScores" id="abilityScoreRand" value="abilityScoreRand" checked>
-                        <label class="form-check-label" for="abilityScoreRand">
-                            Randomly
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="abilityScoreRec" value="abilityScoreRec">
-                        <label class="form-check-label" for="abilityScoreRec">
-                            Recommended for Class
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </fieldset>
-        {{!-- User chooses character equipment --}}
-        <div class="form-group">
-            <label for="character-equipment">Choose Equipment:</label>
-            <select class="form-control" id="character-equipment">
-            {{!-- {{#each equipment as |equipment|}}
-            <option>{{equipment.name}}</option>
-            {{/each}} --}}
-            </select>
+            <input class="form-input" type="text" id="character-class" name="class"></input>
         </div>
       <div class="form-group">
         <button class="btn btn-primary" type="submit">Create Character</button>
