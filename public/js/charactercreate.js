@@ -22,7 +22,7 @@ const characterFormHandler = async (event) => {
   
   if (response.ok) {
         // If successful, redirect the browser to the profile page
-        // document.location.replace('/profile');
+        document.location.replace('/profile');
         console.log("success")
       } else {
         alert(response.statusText);
