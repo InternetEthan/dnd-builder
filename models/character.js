@@ -22,6 +22,34 @@ Characters.init(
     type: DataTypes.STRING,
     allowNull: false
   },
+  ability_score: {
+    type: DataTypes.JSON,
+    allowNull: false,
+    strength: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    dexterity: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    constitution: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    intelligence: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    wisdom: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    charisma: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    }
+  },
   user_id: {
     type: DataTypes.INTEGER,
     references: {

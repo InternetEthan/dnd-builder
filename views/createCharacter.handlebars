@@ -1,25 +1,58 @@
 <div class="row">
-
-    
   <div class="col">
     <h2>Create Character</h2>
-
     <form class="form character-form">
-        {{!-- User chooses character name --}}
+      {{!-- User chooses character name --}}
+      <div class="form-group">
+        <label for="character-name">Character Name:</label>
+        <input class="form-input" type="text" id="character-name" name="name">
+      </div>
+      {{!-- User chooses character race --}}
+      <div class="form-group">
         <div class="form-group">
-            <label for="character-name">Character Name:</label>
-            <input class="form-input" type="text" id="character-name" name="name">
+          <label for="character-race">Choose Character Race:</label>
+          <select class="form-select" id="character-race" name="race">
+            <option value="human">Human</option>
+            <option value="elf">Elf</option>
+            <option value="dwarf">Dwarf</option>
+            <option value="halfling">Halfling</option>
+            <option value="gnome">Gnome</option>
+          </select>
         </div>
-        {{!-- User chooses character race --}}
+      </div>
+      {{!-- User chooses character class --}}
+      <div class="form-group">
         <div class="form-group">
-            <label for="character-race">Choose Character Race:</label>
-            <input class="form-input" type="text" id="character-race" name="race"></input>
+          <label for="character-class">Choose Character Class:</label>
+          <select class="form-select" id="character-class" name="class">
+            <option value="fighter">Fighter</option>
+            <option value="rogue">Rogue</option>
+            <option value="wizard">Wizard</option>
+            <option value="cleric">Cleric</option>
+            <option value="bard">Bard</option>
+          </select>
         </div>
-        {{!-- User chooses chaaracter class --}}
+      </div>
+      {{!-- User chooses ability scores --}}
+      <div class="form-group">
         <div class="form-group">
-            <label for="character-class">Choose Character Class:</label>
-            <input class="form-input" type="text" id="character-class" name="class"></input>
+          <label for="ability_score">Ability Scores:</label>
+          <div class="ability-score-inputs">
+            <label for="strength">Strength:</label>
+            <input class="form-input" type="number" id="strength" name="strength" value="10">
+            <label for="dexterity">Dexterity:</label>
+            <input class="form-input" type="number" id="dexterity" name="dexterity" value="10">
+            <label for="constitution">Constitution:</label>
+            <input class="form-input" type="number" id="constitution" name="constitution" value="10">
+            <label for="intelligence">Intelligence:</label>
+            <input class="form-input" type="number" id="intelligence" name="intelligence" value="10">
+            <label for="wisdom">Wisdom:</label>
+            <input class="form-input" type="number" id="wisdom" name="wisdom" value="10">
+            <label for="charisma">Charisma:</label>
+            <input class="form-input" type="number" id="charisma" name="charisma" value="10">
+          </div>
         </div>
+      </div>
       <div class="form-group">
         <button class="btn btn-primary" type="submit">Create Character</button>
       </div>
