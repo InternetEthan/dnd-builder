@@ -2,31 +2,79 @@
     {
         "name": "Aria",
         "race": "Human",
-        "class": "Wizard"
+        "class": "Wizard",
+        "ability_score": {
+            "strength": 8,
+            "dexterity": 14,
+            "constitution": 12,
+            "intelligence": 18,
+            "wisdom": 10,
+            "charisma": 16
+        }
     },
     {
         "name": "Erevan",
         "race": "Elf",
-        "class": "Ranger"
+        "class": "Ranger",
+        "ability_score": {
+            "strength": 0,
+            "dexterity": 0,
+            "constitution": 0,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": 0
+        }
     },
     {
         "name": "Gronar",
         "race": "Dwarf",
-        "class": "Fighter"
+        "class": "Fighter",
+        "ability_score": {
+            "strength": 0,
+            "dexterity": 0,
+            "constitution": 0,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": 0
+        }
     },
     {
         "name": "Kethril",
         "race": "Human",
-        "class": "Ranger"
+        "class": "Ranger",
+        "ability_score": {
+            "strength": 0,
+            "dexterity": 0,
+            "constitution": 0,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": 0
+        }
     },
     {
         "name": "Lirien",
         "race": "Halfling",
-        "class": "Rogue"
+        "class": "Rogue",
+        "ability_score": {
+            "strength": 0,
+            "dexterity": 0,
+            "constitution": 0,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": 0
+        }
     },
     {
         "name": "Thrain",
         "race": "Dwarf",
-        "class": "Fighter"
+        "class": "Fighter",
+        "ability_score": {
+            "strength": 0,
+            "dexterity": 0,
+            "constitution": 0,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": 0
+        }
     }
 ]
