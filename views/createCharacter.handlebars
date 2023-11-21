@@ -1,59 +1,82 @@
   <div class="row container">
-  <div class="col-md-6 text-shadow">
-    <h2>Create Character</h2>
-    <form class="form character-form">
-
-      {{!-- User chooses character name --}}
-      <div class="form-group">
-        <label for="character-name">Character Name:</label>
-        <input class="form-input form-control w-50 bg-dark text-white" type="text" id="character-name" name="name">
-      </div>
-      {{!-- User chooses character race --}}
-      <div class="form-group">
-        <div class="form-group">
-          <label for="character-race">Choose Character Race:</label>
-          <select class="form-select w-50 bg-dark text-white" id="character-race" name="race">
-            <option value="human">Human</option>
-            <option value="elf">Elf</option>
-            <option value="dwarf">Dwarf</option>
-            <option value="halfling">Halfling</option>
-            <option value="gnome">Gnome</option>
-          </select>
-        </div>
-      </div>
-      {{!-- User chooses character class --}}
-      <div class="form-group">
-        <div class="form-group">
-          <label for="character-class">Choose Character Class:</label>
-          <select class="form-select w-50 bg-dark text-white" id="character-class" name="class">
-            <option value="fighter">Fighter</option>
-            <option value="rogue">Rogue</option>
-            <option value="wizard">Wizard</option>
-            <option value="cleric">Cleric</option>
-            <option value="bard">Bard</option>
-          </select>
-        </div>
-      </div>
-      {{!-- User chooses ability scores --}}
-      <div class="form-group">
-        <div class="form-group w-75 mt-2">
-          <label for="ability_score">Ability Scores:</label>
-          <div class="ability-score-inputs row mt-2">
-            <label for="strength">Strength:</label>
-            <input class="form-input w-25 form-control bg-dark text-white" type="number" id="strength" name="strength" value="10">
-            <label for="dexterity">Dexterity:</label>
-            <input class="form-input w-25 form-control bg-dark text-white" type="number" id="dexterity" name="dexterity" value="10">
-            <label for="constitution">Constitution:</label>
-            <input class="form-input w-25 form-control bg-dark text-white" type="number" id="constitution" name="constitution" value="10">
-            <label for="intelligence">Intelligence:</label>
-            <input class="form-input w-25 form-control bg-dark text-white" type="number" id="intelligence" name="intelligence" value="10">
-            <label for="wisdom">Wisdom:</label>
-            <input class="form-input w-25 form-control bg-dark text-white" type="number" id="wisdom" name="wisdom" value="10">
-            <label for="charisma">Charisma:</label>
-            <input class="form-input w-25 form-control bg-dark text-white" type="number" id="charisma" name="charisma" value="10">
+  <div class="px-5 text-shadow">
+    <h2 class="text-info">Create Character</h2>
+    <form class="d-flex row justify-content-between form character-form">
+        <div class="col">
+          {{!-- User chooses character name --}}
+          <div class="form-group">
+            <label for="character-name" class="h5 mt-3">Character Name:</label>
+            <input class="form-input form-control w-50 bg-dark text-white" type="text" id="character-name" name="name">
+          </div>
+          {{!-- User chooses character race --}}
+          <div class="form-group">
+            <div class="form-group">
+              <label for="character-race" class="h5 mt-3">Choose Character Race:</label>
+              <select class="form-select w-50 bg-dark text-white" id="character-race" name="race">
+                <option value="human">Human</option>
+                <option value="elf">Elf</option>
+                <option value="dwarf">Dwarf</option>
+                <option value="halfling">Halfling</option>
+                <option value="gnome">Gnome</option>
+              </select>
+            </div>
+          </div>
+          {{!-- User chooses character class --}}
+          <div class="form-group">
+            <div class="form-group">
+              <label for="character-class" class="h5 mt-3">Choose Character Class:</label>
+              <select class="form-select w-50 bg-dark text-white" id="character-class" name="class">
+                <option value="fighter">Fighter</option>
+                <option value="rogue">Rogue</option>
+                <option value="wizard">Wizard</option>
+                <option value="cleric">Cleric</option>
+                <option value="bard">Bard</option>
+              </select>
+            </div>
+          </div>
+          {{!-- User chooses ability scores --}}
+          <div class="w-100"></div>
+          <div class="form-group mt-4">
+            <div class="form-group w-75">
+              <label for="ability_score" class="h5">Ability Scores:</label>
+              <div class="ability-score-inputs row d-flex gap-2">
+                <div class="col row">
+                  <label for="strength" class="mt-3">Strength:</label>
+                  <input class="form-input w-25 form-control-lg bg-dark text-white" type="number" id="strength" name="strength" value="10">
+                  <label for="dexterity" class="mt-3">Dexterity:</label>
+                  <input class="form-input w-25 form-control-lg bg-dark text-white" type="number" id="dexterity" name="dexterity" value="10">
+                  <label for="constitution" class="mt-3">Constitution:</label>
+                  <input class="form-input w-25 form-control-lg bg-dark text-white" type="number" id="constitution" name="constitution" value="10">
+                </div>
+                <div class="col row">
+                  <label for="intelligence" class="mt-3">Intelligence:</label>
+                  <input class="form-input w-25 form-control-lg bg-dark text-white" type="number" id="intelligence" name="intelligence" value="10">
+                  <label for="wisdom" class="mt-3">Wisdom:</label>
+                  <input class="form-input w-25 form-control-lg bg-dark text-white" type="number" id="wisdom" name="wisdom" value="10">
+                  <label for="charisma" class="mt-3">Charisma:</label>
+                  <input class="form-input w-25 form-control-lg bg-dark text-white" type="number" id="charisma" name="charisma" value="10">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+        <div class="col-3">
+            <div class="form-group">
+              <legend class="col-form-label pt-0 h5">Choose Character Portrait:</legend>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1"><img src="/assets/portrait1.png" style="height: 100px; width: 100px; object-fit: cover;"></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+              </div>
+          </div>
+        </div>
       <div class="form-group">
         <button class="btn btn-warning mt-3" type="submit">Create Character</button>
       </div>

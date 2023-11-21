@@ -12,7 +12,7 @@
             "wisdom": 15,
             "charisma": 14
         },
-        "portrait": "/assets/portrait1.png"
+        "portrait": "/assets/portrait5.png"
     },
     {
         "name": "Erevan",
@@ -27,7 +27,7 @@
             "wisdom": 11,
             "charisma": 14
         },
-        "portrait": "/assets/portrait2.png"
+        "portrait": "/assets/portrait9.png"
     },
     {
         "name": "Gronar",
@@ -42,7 +42,7 @@
             "wisdom": 10,
             "charisma": 12
         },
-        "portrait": "/assets/portrait3.png"
+        "portrait": "/assets/portrait1.png"
     },
     {
         "name": "Kethril",
@@ -72,7 +72,7 @@
             "wisdom": 10,
             "charisma": 14
         },
-        "portrait": "/assets/portrait5.png"
+        "portrait": "/assets/portrait13.png"
     },
     {
         "name": "Thrain",
@@ -87,6 +87,6 @@
             "wisdom": 12,
             "charisma": 11
         },
-        "portrait": "/assets/portrait6.png"
+        "portrait": "/assets/portrait1.png"
     }
 ]
