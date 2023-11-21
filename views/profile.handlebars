@@ -1,17 +1,17 @@
-<div class="row">
+<div class="container text-shadow mt-3">
   <div class="col-auto">
     <h2>Welcome, {{name}}!</h2>
   </div>
 </div>
 
 {{#if characters.length}}
-<div class="character-list">
+<div class="character-list text-center mt-5">
     <h3>Select a character:</h3>
   <div class="dispCharacterInfo">
     {{!-- Add code to display character information --}}
       {{#each characters}}
-    <ul>
-      <ul><a href="/characters/{{this.id}}">{{this.name}}</a>, {{this.race}} {{this.class}}</ul>
+    <ul class="mt-5">
+      <ul class="mt-5"><a href="/characters/{{this.id}}">{{this.name}}</a>, {{this.race}} {{this.class}}</ul>
       {{!-- <li></li> --}}
     </ul>
     <div class="del-Btn">
