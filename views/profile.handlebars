@@ -11,7 +11,8 @@
     {{!-- Add code to display character information --}}
     {{#each characters}}
     <container class="bg-dark">
-      <ul class="mt-5"><a class="character fs-3" href="/characters/{{this.id}}">{{this.name}}</a></ul>
+      <img src="{{this.portrait}}" alt="character image" class="img-thumbnail">
+      <ul class="mt-5"><a class="text-info fs-3" href="/characters/{{this.id}}">{{this.name}}</a></ul>
       <li>{{this.race}} {{this.class}}</li>
       </ul>
     <div class="del-Btn">

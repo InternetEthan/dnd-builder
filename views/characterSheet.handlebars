@@ -1,7 +1,43 @@
 <div class="character-info">
-    <h2>{{name}}</h2>
-    <p>Level: {{level}}</p>
-    <p>Race: {{race}}</p>
-    <p>Class: {{class}}</p>
+    <div class="row m-4">
+        <container class="rounded bg-dark d-flex align-items-center p-3 justify-content-start" style="--bs-bg-opacity: .5;">
+             <div class="d-inline mx-2">
+                <img src={{portrait}} class="img-thumbnail float-start">
+             </div>
+             <div class="d-inline mx-2">
+                <h2>{{name}}</h2>
+             </div>
+        </container>
+        <container class="rounded bg-dark d-inline-flex m-3 p-3" style="--bs-bg-opacity: .5;">
+            <h5>Level:&nbsp</h5><p>{{level}}</p>
+        </container>
+        <container class="rounded bg-dark d-inline-flex m-3 p-3" style="--bs-bg-opacity: .5;">
+            <h5>Race:&nbsp</h5><p>{{race}}</p>
+        </container>
+        <container class="rounded bg-dark d-inline-flex m-3 p-3" style="--bs-bg-opacity: .5;">
+            <h5>Class:&nbsp</h5><p>{{class}}</p>
+        </container>
+        <container class="row d-inline-flex m-3 p-3 bg-dark rounded" style="--bs-bg-opacity: .5;">
+            <h5>Ability Scores:</h5>
+            <container class="d-flex align-items-center justify-content-center border border-info col-2 d-inline m-3 bg-dark rounded" style="--bs-bg-opacity: .75;">
+                <p>STR: {{ability_score.strength}}</p>
+            </container> 
+            <container class="d-flex align-items-center justify-content-center border border border-info col-2 d-inline m-3 bg-dark rounded" style="--bs-bg-opacity: .75;">
+                <p>DEX: {{ability_score.dexterity}}</p>
+            </container> 
+            <container class="d-flex align-items-center justify-content-center border border border-info col-2 d-inline m-3 bg-dark rounded" style="--bs-bg-opacity: .75;">
+                <p>CON: {{ability_score.constitution}}</p>
+            </container> 
+            <container class="d-flex align-items-center justify-content-center border border border-info col-2 d-inline m-3 bg-dark rounded" style="--bs-bg-opacity: .75;">
+                <p>INT: {{ability_score.intelligence}}</p>
+            </container>
+            <container class="d-flex align-items-center justify-content-center border border border-info col-2 d-inline m-3 bg-dark rounded" style="--bs-bg-opacity: .75;">
+                <p>WIS: {{ability_score.wisdom}}</p>
+            </container>
+            <container class="d-flex align-items-center justify-content-center border border border-info col-2 d-inline m-3 bg-dark rounded" style="--bs-bg-opacity: .75;">
+                <p>CHA {{ability_score.charisma}}</p>
+            </container>
+        </container>
     <!-- Add more character information fields as needed -->
+    </div>
 </div>

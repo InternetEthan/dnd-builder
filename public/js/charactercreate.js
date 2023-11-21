@@ -1,5 +1,3 @@
-// const rng = require('rng')
-
 const characterFormHandler = async (event) => {
   event.preventDefault();
 
