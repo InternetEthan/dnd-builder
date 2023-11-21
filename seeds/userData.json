@@ -1,13 +1,13 @@
 
 [
   {
-    "name": "johndoe",
+    "name": "John Doe",
     "email": "johndoe@example.com",
     "password": "password123",
     "characterIds": [0, 1, 2]
   },
   {
-    "name": "janedoe",
+    "name": "Jane Doe",
     "email": "janedoe@example.com",
     "password": "password456",
     "characterIds": [3, 4, 5]
