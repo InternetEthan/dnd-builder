@@ -11,7 +11,8 @@
             "intelligence": 16,
             "wisdom": 15,
             "charisma": 14
-        }
+        },
+        "portrait": "/assets/portrait1.png"
     },
     {
         "name": "Erevan",
@@ -25,7 +26,8 @@
             "intelligence": 11,
             "wisdom": 11,
             "charisma": 14
-        }
+        },
+        "portrait": "/assets/portrait1.png"
     },
     {
         "name": "Gronar",
@@ -39,7 +41,8 @@
             "intelligence": 8,
             "wisdom": 10,
             "charisma": 12
-        }
+        },
+        "portrait": "/assets/portrait1.png"
     },
     {
         "name": "Kethril",
@@ -53,7 +56,8 @@
             "intelligence": 15,
             "wisdom": 13,
             "charisma": 9
-        }
+        },
+        "portrait": "/assets/portrait1.png"
     },
     {
         "name": "Lirien",
@@ -67,7 +71,8 @@
             "intelligence": 13,
             "wisdom": 10,
             "charisma": 14
-        }
+        },
+        "portrait": "/assets/portrait1.png"
     },
     {
         "name": "Thrain",
@@ -81,6 +86,7 @@
             "intelligence": 12,
             "wisdom": 12,
             "charisma": 11
-        }
+        },
+        "portrait": "/assets/portrait1.png"
     }
 ]
