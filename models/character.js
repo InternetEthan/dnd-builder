@@ -22,6 +22,10 @@ Characters.init(
     type: DataTypes.STRING,
     allowNull: false
   },
+  level: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
   ability_score: {
     type: DataTypes.JSON,
     allowNull: false,
