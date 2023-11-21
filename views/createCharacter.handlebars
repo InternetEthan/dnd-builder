@@ -1,62 +1,127 @@
-  <div class="row container">
-  <div class="col-md-6 text-shadow">
-    <h2>Create Character</h2>
-    <form class="form character-form">
-
-      {{!-- User chooses character name --}}
-      <div class="form-group">
-        <label for="character-name">Character Name:</label>
-        <input class="form-input form-control w-50 bg-dark text-white" type="text" id="character-name" name="name">
-      </div>
-      {{!-- User chooses character race --}}
-      <div class="form-group">
-        <div class="form-group">
-          <label for="character-race">Choose Character Race:</label>
-          <select class="form-select w-50 bg-dark text-white" id="character-race" name="race">
-            <option value="human">Human</option>
-            <option value="elf">Elf</option>
-            <option value="dwarf">Dwarf</option>
-            <option value="halfling">Halfling</option>
-            <option value="gnome">Gnome</option>
-          </select>
-        </div>
-      </div>
-      {{!-- User chooses character class --}}
-      <div class="form-group">
-        <div class="form-group">
-          <label for="character-class">Choose Character Class:</label>
-          <select class="form-select w-50 bg-dark text-white" id="character-class" name="class">
-            <option value="fighter">Fighter</option>
-            <option value="rogue">Rogue</option>
-            <option value="wizard">Wizard</option>
-            <option value="cleric">Cleric</option>
-            <option value="bard">Bard</option>
-          </select>
-        </div>
-      </div>
-      {{!-- User chooses ability scores --}}
-      <div class="form-group">
-        <div class="form-group w-75 mt-2">
-          <label for="ability_score">Ability Scores:</label>
-          <span class="ability_score_rolls">{{abilityScoreRoll}} | {{abilityScoreRoll}} | {{abilityScoreRoll}} | {{abilityScoreRoll}} | {{abilityScoreRoll}} | {{abilityScoreRoll}}</span>
-          <div class="ability-score-inputs row mt-2">
-            <label for="strength">Strength:</label>
-            <input class="form-input w-25 form-control bg-dark text-white" type="number" id="strength" name="strength" value="10">
-            <label for="dexterity">Dexterity:</label>
-            <input class="form-input w-25 form-control bg-dark text-white" type="number" id="dexterity" name="dexterity" value="10">
-            <label for="constitution">Constitution:</label>
-            <input class="form-input w-25 form-control bg-dark text-white" type="number" id="constitution" name="constitution" value="10">
-            <label for="intelligence">Intelligence:</label>
-            <input class="form-input w-25 form-control bg-dark text-white" type="number" id="intelligence" name="intelligence" value="10">
-            <label for="wisdom">Wisdom:</label>
-            <input class="form-input w-25 form-control bg-dark text-white" type="number" id="wisdom" name="wisdom" value="10">
-            <label for="charisma">Charisma:</label>
-            <input class="form-input w-25 form-control bg-dark text-white" type="number" id="charisma" name="charisma" value="10">
+  <div class="row px-5">
+  <div class="px-5 text-shadow">
+    <h2 class="text-info mx-4">Create Character</h2>
+    <form class="d-flex justify-content-center form character-form">
+        <div class="mx-3 row">
+          {{!-- User chooses character name --}}
+          <div class="form-group">
+            <label for="character-name" class="h5 mt-3">Character Name:</label>
+            <input class="form-input form-control w-50 bg-dark text-white" type="text" id="character-name" name="name">
+          </div>
+          {{!-- User chooses character race --}}
+          <div class="form-group">
+            <label for="character-race" class="h5 mt-3">Choose Character Race:</label>
+            <select class="form-select w-50 bg-dark text-white" id="character-race" name="race">
+              <option value="Human">Human</option>
+              <option value="Elf">Elf</option>
+              <option value="Dwarf">Dwarf</option>
+              <option value="Halfling">Halfling</option>
+              <option value="Gnome">Gnome</option>
+            </select>
+          </div>
+          {{!-- User chooses character class --}}
+          <div class="form-group">
+            <label for="character-class" class="h5 mt-3">Choose Character Class:</label>
+            <select class="form-select w-50 bg-dark text-white" id="character-class" name="class">
+              <option value="Fighter">Fighter</option>
+              <option value="Rogue">Rogue</option>
+              <option value="Wizard">Wizard</option>
+              <option value="Cleric">Cleric</option>
+              <option value="Bard">Bard</option>
+            </select>
+          </div>
+          {{!-- User chooses ability scores --}}
+          <div class="w-100"></div>
+          <div class="form-group mt-5">
+            <label for="ability_score" class="h5">Ability Scores:</label>
+            {{!-- <span class="ability_score_rolls">{{abilityScoreRoll}} | {{abilityScoreRoll}} | {{abilityScoreRoll}} | {{abilityScoreRoll}} | {{abilityScoreRoll}} | {{abilityScoreRoll}}</span> --}}
+            <div class="ability-score-inputs col d-flex">
+              <div class="row">
+                <label for="strength" class="mt-3">Strength:</label>
+                <input class="form-input w-50 form-control-lg bg-dark text-white" type="number" id="strength" name="strength" value="{{abilityScoreRoll}}">
+                <label for="dexterity" class="mt-3">Dexterity:</label>
+                <input class="form-input w-50 form-control-lg bg-dark text-white" type="number" id="dexterity" name="dexterity" value="{{abilityScoreRoll}}">
+                <label for="constitution" class="mt-3">Constitution:</label>
+                <input class="form-input w-50 form-control-lg bg-dark text-white" type="number" id="constitution" name="constitution" value="{{abilityScoreRoll}}">
+              </div>
+              <div class="row">
+                <label for="intelligence" class="mt-3">Intelligence:</label>
+                <input class="form-input w-50 form-control-lg bg-dark text-white" type="number" id="intelligence" name="intelligence" value="{{abilityScoreRoll}}">
+                <label for="wisdom" class="mt-3">Wisdom:</label>
+                <input class="form-input w-50 form-control-lg bg-dark text-white" type="number" id="wisdom" name="wisdom" value="{{abilityScoreRoll}}">
+                <label for="charisma" class="mt-3">Charisma:</label>
+                <input class="form-input w-50 form-control-lg bg-dark text-white" type="number" id="charisma" name="charisma" value="{{abilityScoreRoll}}">
+              </div>
+            </div>
+            </div>
+          </div>
+        <div class="col-4 mx-5 d-flex flex-shrink-5">
+          <div class="form-group form-check-inline" id="character-portrait">
+            <legend class="form-label pt-0 h5">Choose Character Portrait:</legend>
+                <div class="d-flex justify-content-center bg-dark rounded p-3 gap-4 flex-wrap">
+                  <div class="d-flex gap-4">
+                    <input type="radio" class="btn-check" name="portrait" id="option1" autocomplete="off" value="portrait1.png" checked>
+                    <label class="btn btn-outline-info" for="option1">
+                      <img src="/assets/portrait1.png" style="height: 100px; width: 100px; object-fit: cover;">
+                    </label>
+                    <input type="radio" class="btn-check" name="portrait" id="option2" autocomplete="off" value="portrait2.png">
+                    <label class="btn btn-outline-info" for="option2">
+                      <img src="/assets/portrait2.png" style="height: 100px; width: 100px; object-fit: cover;">
+                    </label>
+                    <input type="radio" class="btn-check" name="portrait" id="option3" autocomplete="off" value="portrait3.png">
+                    <label class="btn btn-outline-info" for="option3">
+                      <img src="/assets/portrait3.png" style="height: 100px; width: 100px; object-fit: cover;">
+                    </label>
+                  </div>
+                  <div class="d-flex gap-4">
+                    <input type="radio" class="btn-check" name="portrait" id="option4" autocomplete="off" value="portrait4.png">
+                    <label class="btn btn-outline-info" for="option4">
+                      <img src="/assets/portrait4.png" style="height: 100px; width: 100px; object-fit: cover;">
+                    </label>
+                    <input type="radio" class="btn-check" name="portrait" id="option5" autocomplete="off" value="portrait5.png">
+                    <label class="btn btn-outline-info" for="option5">
+                      <img src="/assets/portrait5.png" style="height: 100px; width: 100px; object-fit: cover;">
+                    </label>
+                    <input type="radio" class="btn-check" name="portrait" id="option6" autocomplete="off" value="portrait6.png">
+                    <label class="btn btn-outline-info" for="option6">
+                      <img src="/assets/portrait6.png" style="height: 100px; width: 100px; object-fit: cover;">
+                    </label>
+                  </div>
+                  <div class="d-flex gap-4">
+                    <input type="radio" class="btn-check" name="portrait" id="option7" autocomplete="off" value="portrait7.png">
+                    <label class="btn btn-outline-info" for="option7">
+                      <img src="/assets/portrait7.png" style="height: 100px; width: 100px; object-fit: cover;">
+                    </label>
+                    <input type="radio" class="btn-check" name="portrait" id="option8" autocomplete="off" value="portrait8.png">
+                    <label class="btn btn-outline-info" for="option8">
+                      <img src="/assets/portrait8.png" style="height: 100px; width: 100px; object-fit: cover;">
+                    </label>
+                    <input type="radio" class="btn-check" name="portrait" id="option9" autocomplete="off" value="portrait9.png">
+                    <label class="btn btn-outline-info" for="option9">
+                      <img src="/assets/portrait9.png" style="height: 100px; width: 100px; object-fit: cover;">
+                    </label>
+                  </div>
+                  <div class="d-flex gap-4">
+                    <input type="radio" class="btn-check" name="portrait" id="option10" autocomplete="off" value="portrait10.png">
+                    <label class="btn btn-outline-info" for="option10">
+                      <img src="/assets/portrait10.png" style="height: 100px; width: 100px; object-fit: cover;">
+                    </label>
+                    <input type="radio" class="btn-check" name="portrait" id="option11" autocomplete="off" value="portrait11.png">
+                    <label class="btn btn-outline-info" for="option11">
+                      <img src="/assets/portrait11.png" style="height: 100px; width: 100px; object-fit: cover;">
+                    </label>
+                    <input type="radio" class="btn-check" name="portrait" id="option12" autocomplete="off" value="portrait12.png">
+                    <label class="btn btn-outline-info" for="option12">
+                      <img src="/assets/portrait12.png" style="height: 100px; width: 100px; object-fit: cover;">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="form-group">
-        <button class="btn btn-warning mt-3" type="submit">Create Character</button>
+      <div class="form-group mt-3 d-flex justify-content-center">
+        <button class="btn btn-warning mt-3 btn-lg" type="submit">Create Character</button>
       </div>
     </form>
   </div>

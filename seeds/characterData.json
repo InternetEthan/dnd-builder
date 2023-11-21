@@ -12,7 +12,7 @@
             "wisdom": 15,
             "charisma": 14
         },
-        "portrait": "/assets/portrait1.png"
+        "portrait": "/assets/portrait5.png"
     },
     {
         "name": "Erevan",
@@ -27,7 +27,7 @@
             "wisdom": 11,
             "charisma": 14
         },
-        "portrait": "/assets/portrait1.png"
+        "portrait": "/assets/portrait9.png"
     },
     {
         "name": "Gronar",
@@ -57,7 +57,7 @@
             "wisdom": 13,
             "charisma": 9
         },
-        "portrait": "/assets/portrait1.png"
+        "portrait": "/assets/portrait4.png"
     },
     {
         "name": "Lirien",
@@ -72,7 +72,7 @@
             "wisdom": 10,
             "charisma": 14
         },
-        "portrait": "/assets/portrait1.png"
+        "portrait": "/assets/portrait13.png"
     },
     {
         "name": "Thrain",
