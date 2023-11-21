@@ -12,22 +12,22 @@
             "wisdom": 15,
             "charisma": 14
         },
-        "portrait": "/assets/portrait5.png"
+        "portrait": "/assets/portrait11.png"
     },
     {
-        "name": "Erevan",
+        "name": "Erevana",
         "race": "Elf",
-        "class": "Ranger",
+        "class": "Warlock",
         "level": 1,
         "ability_score": {
-            "strength": 15,
-            "dexterity": 16,
+            "strength": 12,
+            "dexterity": 14,
             "constitution": 9,
             "intelligence": 11,
             "wisdom": 11,
-            "charisma": 14
+            "charisma": 18
         },
-        "portrait": "/assets/portrait9.png"
+        "portrait": "/assets/portrait6.png"
     },
     {
         "name": "Gronar",
@@ -46,7 +46,7 @@
     },
     {
         "name": "Kethril",
-        "race": "Human",
+        "race": "Half-Orc",
         "class": "Ranger",
         "level": 1,
         "ability_score": {
@@ -57,11 +57,11 @@
             "wisdom": 13,
             "charisma": 9
         },
-        "portrait": "/assets/portrait4.png"
+        "portrait": "/assets/portrait13.png"
     },
     {
         "name": "Lirien",
-        "race": "Halfling",
+        "race": "Human",
         "class": "Rogue",
         "level": 1,
         "ability_score": {
@@ -72,21 +72,21 @@
             "wisdom": 10,
             "charisma": 14
         },
-        "portrait": "/assets/portrait13.png"
+        "portrait": "/assets/portrait9.png"
     },
     {
         "name": "Thrain",
-        "race": "Dwarf",
-        "class": "Fighter",
+        "race": "Human",
+        "class": "Monk",
         "level": 1,
         "ability_score": {
-            "strength": 17,
-            "dexterity": 15,
+            "strength": 12,
+            "dexterity": 17,
             "constitution": 18,
             "intelligence": 12,
             "wisdom": 12,
-            "charisma": 11
+            "charisma": 10
         },
-        "portrait": "/assets/portrait1.png"
+        "portrait": "/assets/portrait8.png"
     }
 ]
