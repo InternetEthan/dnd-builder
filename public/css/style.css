@@ -43,8 +43,11 @@ header, .project:not(:last-child) {
 
 .background {
   background-color: rgb(143, 38, 38);
+  height: 100%;
+  
 }
 
 .character {
 color: rgb(96, 169, 197);
 }
+
