@@ -14,6 +14,10 @@ Characters.init(
     type: DataTypes.STRING,
     allowNull: false
   },
+  portrait: {
+    type: DataTypes.STRING,
+    allowNull: true
+  },
   race: {
     type: DataTypes.STRING,
     allowNull: false
@@ -21,6 +25,11 @@ Characters.init(
   class: {
     type: DataTypes.STRING,
     allowNull: false
+  },
+  level: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+    defaultValue: 1
   },
   ability_score: {
     type: DataTypes.JSON,
