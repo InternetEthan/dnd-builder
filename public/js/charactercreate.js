@@ -11,6 +11,7 @@ const characterFormHandler = async (event) => {
     const intelligence = document.querySelector('#intelligence').value.trim();
     const wisdom = document.querySelector('#wisdom').value.trim();
     const charisma = document.querySelector('#charisma').value.trim();
+    const charPortrait = "/assets/" + document.querySelector('input[name="portrait"]:checked').value;
 
     const ability_score = { strength, dexterity, constitution, intelligence, wisdom, charisma };
 
@@ -19,7 +20,7 @@ const characterFormHandler = async (event) => {
       // Send a POST request to the API endpoint
       const response = await fetch('/api/characters', {
         method: 'POST',
-        body: JSON.stringify({ name: charName, race: charRace, class: charClass, ability_score }),
+        body: JSON.stringify({ name: charName, race: charRace, class: charClass, ability_score, portrait: charPortrait }),
         headers: { 'Content-Type': 'application/json' },
       });
   
@@ -31,24 +32,8 @@ const characterFormHandler = async (event) => {
         alert(response.statusText);
       }
     }
-  };``
+  };
 
-// function setAbilityScore(abilityScoresChoice, classChoice) {
-//     const abilityScores = []
-//     switch(choice.value) {
-//         case 'random':
-//             for (let i = 0; i < 7; i++) {
-//                 abilityScoresChoice += Math.random() * (20 - 1) + 1;
-//             } ;
-//         case 'recommended':
-//             // choose ability scores based on selected class 
-//             // 15, 14, 13, 12, 10, 8
-//             // Abilities:
-//             // Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma
-//     return abilityScores
-//     }
-// };
-  
 document
   .querySelector('.character-form')
   .addEventListener('submit', characterFormHandler);

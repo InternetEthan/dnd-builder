@@ -76,4 +76,3 @@ Characters.init(
 );
 
 module.exports = Characters;
-
