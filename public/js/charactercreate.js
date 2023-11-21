@@ -32,23 +32,7 @@ const characterFormHandler = async (event) => {
         alert(response.statusText);
       }
     }
-  };``
-
-// function setAbilityScore(abilityScoresChoice, classChoice) {
-//     const abilityScores = []
-//     switch(choice.value) {
-//         case 'random':
-//             for (let i = 0; i < 7; i++) {
-//                 abilityScoresChoice += Math.random() * (20 - 1) + 1;
-//             } ;
-//         case 'recommended':
-//             // choose ability scores based on selected class 
-//             // 15, 14, 13, 12, 10, 8
-//             // Abilities:
-//             // Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma
-//     return abilityScores
-//     }
-// };
+  };
 
 document
   .querySelector('.character-form')
