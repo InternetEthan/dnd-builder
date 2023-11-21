@@ -1,5 +1,5 @@
 <div class="container text-shadow mt-3">
-  <div class="col-auto">
+  <div class="col-auto text-center">
     <h2>Welcome, {{name}}!</h2>
   </div>
 </div>
@@ -9,14 +9,15 @@
     <h3>Select a character:</h3>
   <div class="dispCharacterInfo">
     {{!-- Add code to display character information --}}
-      {{#each characters}}
-    <ul class="mt-5">
+    {{#each characters}}
+    <container class="bg-dark">
       <ul class="mt-5"><a href="/characters/{{this.id}}">{{this.name}}</a>, {{this.race}} {{this.class}}</ul>
       {{!-- <li></li> --}}
-    </ul>
+      </ul>
     <div class="del-Btn">
       <button class="btn btn-sm btn-danger" data-id="{{this.id}}">DELETE</button>
     </div>
+    </container>
       {{/each}}
   </div>
   {{/if}}
