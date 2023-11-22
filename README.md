@@ -2,7 +2,9 @@
 
 ## Description
 
-(insert description notes here)
+DnD Builder is a Dungeons and Dragons character builder that's all about keeping it simple and letting you create your hero hassle-free. Craft your character quickly and easily with a straightforward tool to bring your adventurer to life.
+
+DnD Builder allows the user to create an account, create and view DnD characters with basic character information and view their character sheets.
 
 ## Installation
 
@@ -20,7 +22,16 @@ You will need a mySQL user for this back end. If you don't already have one, go 
 
 ## Usage
 
-(insert usage notes here)
+* Access the login/signup page and create or login to your account
+* Click the "create character" button to create a new character
+* Enter in the following character information:
+    1. Character name: Type in as text input
+    2. Race: Select from a list
+    3. Class: Select from a list
+    4. Ability Scores: Randomly generated upon loading character creation page but able to be customized.
+    5. Character Portraits: Select from a thumbnail list
+* In the profile page, click on your character names to access their character sheets.
+* In a character's sheet, you can dynamically change their health points.
 
 ## Credits
 
